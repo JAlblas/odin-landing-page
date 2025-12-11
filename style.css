@@ -1,182 +1,200 @@
 body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
+/* RESET */
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    list-style: none;
+  margin: 0;
+  list-style: none;
 }
 
 header,
-.hero,
+#hero,
 footer {
-    background-color: hsl(215, 28%, 17%);
-    color: #F9FAF8;
+  background-color: #1f2937;
+  color: #f9faf8;
 }
 
 header,
 section {
-    padding: 15px 20% 75px;
+  padding: 15px 20% 75px;
 }
 
-.info,
-.quote {
-    padding: 15px 25% 75px;
+#info,
+#quote {
+  padding: 15px 25% 75px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 header ul {
-    display: flex;
-    gap: 25px;
+  display: flex;
+  gap: 25px;
 }
 
 header a {
-    text-decoration: none;
-    color: #FFF;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
 }
 
 header h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
-.hero {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+#hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .left,
 .right {
-    flex: 1;
-
+  flex: 1 45%;
 }
 
 .left {
-    padding-right: 25px;
+  padding-right: 25px;
 }
 
 .right img {
-    height: 250px;
-    width: 500px;
+  height: 250px;
+  width: 500px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    font-weight: extra-bold;
-    margin: 0;
+#hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+  margin: 0;
 }
 
 header li,
-.hero p,
+#hero p,
 footer p {
-    font-size: 18px;
-    color: #E5E7EB;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
-.info h2 {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: extra-bold;
-    text-align: center;
-    margin: 30px 0px;
+#info h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: extra-bold;
+  text-align: center;
+  margin: 40px 0px;
 }
 
 .images {
-    display: flex;
-    gap: 50px;
-    text-align: center;
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  font-weight: 300;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.img {
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 150px;
+  min-height: 150px;
 }
 
 .box {
-    width: 150px;
-    height: 150px;
-    border: 3px solid #3882F6;
-    border-radius: 5px;
-    text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
-.quote {
-    background-color: #E5E7EB;
+.img > p {
+  margin: 5px 0;
 }
 
-.quote em {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 100;
-    font-style: italic;
-    margin: 50px 0;
-    display: block;
+#quote {
+  padding-top: 25px;
+  background-color: #e5e7eb;
 }
 
-.quote .person {
-    text-align: right;
-    font-weight: bold;
+#quote em {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 200;
+  font-style: italic;
+  margin: 50px 0;
+  display: block;
+}
+
+#quote .person {
+  text-align: right;
+  font-weight: bold;
 }
 
 button {
-    padding: 10px 25px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 button a {
-    text-decoration: none;
-    color: #FFF;
+  text-decoration: none;
+  color: #fff;
 }
 
-.cta {
-    padding-top: 75px;
+#cta {
+  padding-top: 75px;
 }
 
-.cta .inner {
-    color: #FFF;
-    background-color: #3882F6;
-    padding: 25px 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#cta .inner {
+  color: #fff;
+  background-color: #3882f6;
+  padding: 25px 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .inner h4 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .inner p {
-    font-weight: lighter;
+  font-weight: lighter;
+  margin: 0;
+  font-size: 14px;
 }
 
 .header-button {
-    background-color: #3882F6;
-    color: #FFF;
-    border: 1px solid #3882F6;
+  background-color: #3882f6;
+  color: #fff;
+  border: 1px solid #3882f6;
 }
 
 .cta-button {
-    background-color: #3882F6;
-    color: #FFF;
-    border: 1px solid #FFF;
-
+  background-color: #3882f6;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 footer {
-    text-align: center;
-    padding: 15px 20%;
+  text-align: center;
+  padding: 15px 20%;
 }
